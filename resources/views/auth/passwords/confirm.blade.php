@@ -13,19 +13,15 @@
                 fieldName="password"
                 fieldType="password" />
 
-            <div class="form-group row mb-0">
-                <div class="col-md-8 offset-md-4">
-                    <button type="submit" class="btn btn-primary">
-                        {{ __('Confirm Password') }}
-                    </button>
-
+            <x-submit-group buttonLabel="Confirm Password" class="col-md-8">
+                <x-slot name="link">
                     @if (Route::has('password.request'))
                         <a class="btn btn-link" href="{{ route('password.request') }}">
                             {{ __('Forgot Your Password?') }}
                         </a>
                     @endif
-                </div>
-            </div>
+                </x-slot>
+            </x-submit-group>
         </form>
     </x-auth-card>
 </x-layout>

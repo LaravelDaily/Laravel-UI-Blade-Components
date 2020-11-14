@@ -26,13 +26,7 @@
                 fieldName="password_confirmation"
                 fieldType="password" />
 
-            <div class="form-group row mb-0">
-                <div class="col-md-6 offset-md-4">
-                    <button type="submit" class="btn btn-primary">
-                        {{ __('Register') }}
-                    </button>
-                </div>
-            </div>
+            <x-submit-group buttonLabel="Register" />
         </form>
     </x-auth-card>
 </x-layout>

@@ -12,4 +12,3 @@
         {{ __('You are logged in!') }}
     </x-auth-card>
 </x-layout>
-@endsection

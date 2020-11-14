@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-layout>
     <x-auth-card>
         <x-slot name="header">
             {{ __('Register') }}
@@ -72,4 +70,4 @@
             </div>
         </form>
     </x-auth-card>
-@endsection
+</x-layout>
